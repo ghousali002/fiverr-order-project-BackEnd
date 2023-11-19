@@ -6,4 +6,6 @@ const RegistrationController = require("../Controllers/RegistrationController");
 
 router.post("/createUser", RegistrationController.createUser);
 
+router.get("/generateCaptcha", RegistrationController.generateNewCaptcha);
+
 module.exports = router;
